@@ -1,0 +1,33 @@
+# Authod: Cliff Cyphers
+# Published as part of the cyberconnect's platform mainly used
+# in hosting rails applications.  
+# Licesnse: GPLv3: http://www.gnu.org/licenses/gpl.html
+
+
+:copy_items:
+- /usr/libexec/mysqld
+- /usr/bin/mysqlhotcopy
+- /bin/sh
+- /usr/share/mysql
+- /usr/bin/perl
+- /usr/lib/perl5
+- /var/lib/mysql/mysql
+:mkdir:
+- :item: /var/run/mysqld
+  :user: mysql
+  :group: root
+- :item: /usr/lib/mysql
+  :user: mysql
+  :group: root
+- :item: /usr/lib/mysql/plugin
+  :user: mysql
+  :group: root
+- :item: /usr/local/share
+  :user: root
+  :group: root
+:users:
+- mysql
+:chown:
+- :item: /var/lib/mysql
+  :user: mysql
+  :group: root
