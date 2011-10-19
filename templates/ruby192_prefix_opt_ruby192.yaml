@@ -5,9 +5,9 @@
 
 
 :copy_items:
-- /opt/bin/ruby
-- /opt/bin/gem
-- /opt/lib/libruby-static.a
-- /opt/lib/ruby
+- /opt/ruby192/bin/ruby
+- /opt/ruby192/bin/gem
+- /opt/ruby192/lib/libruby-static.a
+- /opt/ruby192/lib/ruby
 - /bin/sh
 - /bin/bash
