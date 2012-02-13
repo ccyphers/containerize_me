@@ -1,0 +1,45 @@
+# Authod: Cliff Cyphers
+# Published as part of the cyberconnect's platform mainly used
+# in hosting rails applications.  
+# Licesnse: GPLv3: http://www.gnu.org/licenses/gpl.html
+
+
+:copy_items:
+- /usr/bin/beanstalkd
+- /bin/uname
+- /usr/bin/env
+- /bin/sh
+- /bin/ps
+- /bin/chown
+- /usr/bin/which
+- /bin/bash
+- /usr/bin/nohup
+- /etc/debian_version
+:depends_on:
+- ubuntu_mysqld.yaml
+- ubuntu_sshd.yaml
+- ruby193_prefix_opt_ruby193.yaml
+- nginx_prefix_opt.yaml
+:mkdir:
+- :item: /proc
+  :user: root
+  :group: root
+  :mode: 0755
+- :item: /dev
+  :user: root
+  :group: root
+  :mode: 0755
+- :item: /tmp
+  :user: root
+  :group: root
+  :mode: 0777
+:symlinks:
+-
+  :source: /opt/ruby193/bin/ruby
+  :destination: /usr/bin/ruby
+  :force: true
+-
+  :source: /opt/ruby193/lib/ruby/gems/1.9.1/gems/process_control-0.1.0/bin/process_control
+  :destination: /usr/bin/process_control
+  :force: true
+

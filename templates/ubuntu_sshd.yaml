@@ -9,5 +9,17 @@
 - /etc/ssh
 - /bin/sh
 - /bin/bash
+- /usr/bin/ssh-keygen
+- /usr/lib/i386-linux-gnu/libgssapi_krb5.so.2
+- /usr/lib/i386-linux-gnu/libkrb5.so.3
+- /usr/lib/i386-linux-gnu/libk5crypto.so.3
+- /usr/lib/i386-linux-gnu/libkrb5support.so.0
+- /lib/i386-linux-gnu/libkeyutils.so.1
 :users:
 - sshd
+:mkdir:
+- :item: /var/run/sshd
+  :user: root
+  :group: root
+  :mode: 0750
+

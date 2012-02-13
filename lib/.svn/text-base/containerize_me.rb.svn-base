@@ -82,7 +82,7 @@ module Jail
   # FileUtils.cp_r first followed by cp_dep_libs to use jk_cp to copy over
   # deps for executable and shared object items
   def cp(item)
-=begin
+#=begin
     if File.directory?(item)
       dir = File.dirname(item)
       begin
@@ -93,10 +93,9 @@ module Jail
       Jail.cp_dep_libs(item, @config.jail)
       err = ''
     else
-      err = Jail.exec("jk_cp -j #{@config.jail} #{item}") 
+#=end
+      err = Jail.exec("jk_cp -o -j #{@config.jail} #{item}") 
     end
-=end
-    err = Jail.exec("jk_cp -j #{@config.jail} #{item}") 
     FileUtils.clone_perms(item, @config.jail)
     if err.length != 0
       raise StandardError, "#{Constants::Errors::JK_INIT_ERROR} #{err}"
@@ -106,7 +105,7 @@ module Jail
 
   def add_common_items
     files = []
-    common = %w(libnss libcurl ld-linux libc libtinfo libpthread librt libm libz.so.1 libssl)
+    common = %w(libnss libcurl)
     common.each { |lib|
       Find.find('/lib').each { |i| files << i if i =~ /#{lib}/ }
     }

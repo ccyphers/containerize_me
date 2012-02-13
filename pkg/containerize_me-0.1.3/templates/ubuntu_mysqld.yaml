@@ -17,13 +17,6 @@
 - /usr/lib/perl
 - /usr/lib/perl5
 - /var/lib/mysql/mysql
-- /lib/i386-linux-gnu/libwrap.so.0
-- /usr/lib/i386-linux-gnu/libstdc++.so.6
-- /usr/lib/libmysqlclient.a 
-- /usr/lib/libmysqlclient.so 
-- /usr/lib/libmysqlclient.so.16
-- /lib/i386-linux-gnu/libgcc_s.so.1
-- /lib/i386-linux-gnu/libnsl.so.1
 :mkdir:
 - :item: /var/run/mysqld
   :user: mysql

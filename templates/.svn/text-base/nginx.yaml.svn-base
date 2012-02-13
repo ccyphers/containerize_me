@@ -5,10 +5,7 @@
 
 
 :copy_items:
-- /opt/ruby192/bin/ruby
-- /opt/ruby192/bin/gem
-- /opt/ruby192/bin/rake
-- /opt/ruby192/lib/libruby-static.a
-- /opt/ruby192/lib/ruby
+- /opt/cyberconnect/nginx
 - /bin/sh
-- /bin/bash
+:users:
+- www-data

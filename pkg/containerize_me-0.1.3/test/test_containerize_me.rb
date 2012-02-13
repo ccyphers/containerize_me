@@ -4,11 +4,10 @@
 # Licesnse: GPLv3: http://www.gnu.org/licenses/gpl.html
 
 
-:copy_items:
-- /opt/ruby192/bin/ruby
-- /opt/ruby192/bin/gem
-- /opt/ruby192/bin/rake
-- /opt/ruby192/lib/libruby-static.a
-- /opt/ruby192/lib/ruby
-- /bin/sh
-- /bin/bash
+require "test/unit"
+require "containerize_me"
+
+class TestContainerizeMe < Test::Unit::TestCase
+  def test_sanity
+  end
+end

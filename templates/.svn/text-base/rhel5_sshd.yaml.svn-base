@@ -5,10 +5,9 @@
 
 
 :copy_items:
-- /opt/ruby192/bin/ruby
-- /opt/ruby192/bin/gem
-- /opt/ruby192/bin/rake
-- /opt/ruby192/lib/libruby-static.a
-- /opt/ruby192/lib/ruby
+- /usr/sbin/sshd
+- /etc/ssh
 - /bin/sh
 - /bin/bash
+:users:
+- sshd

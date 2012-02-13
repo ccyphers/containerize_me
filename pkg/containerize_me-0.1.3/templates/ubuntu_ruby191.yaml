@@ -1,0 +1,22 @@
+# Authod: Cliff Cyphers
+# Published as part of the cyberconnect's platform mainly used
+# in hosting rails applications.  
+# Licesnse: GPLv3: http://www.gnu.org/licenses/gpl.html
+
+
+:copy_items:
+- /usr/bin/ruby1.9.1
+- /usr/bin/gem1.9.1
+- /usr/local/lib/site_ruby
+- /usr/lib/ruby/1.9.1
+- /bin/sh
+- /bin/bash
+:symlinks:
+-
+  :source: /usr/bin/ruby1.9.1
+  :destination: /usr/bin/ruby
+  :force: true
+-
+  :source: /usr/bin/gem1.9.1
+  :destination: /usr/bin/gem
+  :force: true

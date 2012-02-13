@@ -1,0 +1,24 @@
+# Authod: Cliff Cyphers
+# Published as part of the cyberconnect's platform mainly used
+# in hosting rails applications.  
+# Licesnse: GPLv3: http://www.gnu.org/licenses/gpl.html
+
+
+:copy_items:
+- /usr/bin/sudo
+- /etc/sudoers
+- /etc/sudoers.d
+- /lib/i386-linux-gnu/libresolv.so.2
+- /lib/i386-linux-gnu/libutil.so.1
+- /lib/i386-linux-gnu/libpam.so.0
+- /etc/pam.d
+- /etc/pam.conf
+- /lib/i386-linux-gnu/libpam_misc.so.0
+- /lib/i386-linux-gnu/libpamc.so.0
+- /lib/i386-linux-gnu/security/pam_permit.so
+- /lib/i386-linux-gnu/libnss_nis.so.2
+- /lib/i386-linux-gnu/security/pam_permit.so
+- /lib/i386-linux-gnu/security/pam_unix.so
+- /lib/i386-linux-gnu/security/pam_deny.so
+- /lib/i386-linux-gnu/security/pam_permit.so
+- /lib/security/pam_cap.so
